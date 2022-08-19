@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head></head>
+<body>
+    <div id="div1">
+    <h1>Login</h1>
+    <input type="password" placeholder="Enter server password" id="input1"></input>
+    </div>
+    <div id="div2">
+<h1>something</h1>
+<h4><strong>Server IP:</strong>  thz.mine.bz</h4>
+<h4><strong>Current mods:</strong>  drive file link or something here idk</h4>
+<h4><strong>Current members:</strong>  something here</h4>
+    </div>
+    <script>
+div1 = document.getElementById("div1")
+div2 = document.getElementById("div2")
+input1 = document.getElementById("input1")
+div2.hidden = true
+
+input1:addEventListener('keypress', function(e) {
+if (e.key === 'Enter') {
+    if (input1.value == "password123") {
+        div1.hidden = true
+        div2.hidden = false
+    }
+}
+});
+    </script>
+</body>
